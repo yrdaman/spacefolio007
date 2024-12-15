@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>90's Space Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Predator Strike</h1>
+ 
+  <canvas id="gameCanvas" width="800" height="600"><div id="healthBarContainer">
+    <div id="healthBar"></div>
+    <div id="healthBarText">100%</div> <!-- Initial health text -->
+    </div>
+  </canvas>
+  
+  
+  <div id ="gameOver">
+    <button id="startBtn">Start Game</button>
+    <button id="restartBtn" style="display: none;">Replay</button>
+
+    <div id="scoreBoard">
+      <span id="score">Score: 0</span>
+      <br>
+      <span id="highScore">High Score :0</span>
+    
+    </div>
+    
+    
+  </div>
+
+  <script src="script.js"></script>
+  
+
+  
+  
+
+</body>
+</html>

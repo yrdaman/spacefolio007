@@ -1,0 +1,198 @@
+html{
+    scroll-behavior: smooth;
+}
+/* General Styles */
+body {
+    font-family:fantasy, monospace;
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden;
+    background: url('me.png'); 
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast; /* For WebKit browsers */
+    image-rendering: crisp-edges; /* For Firefox */
+    image-rendering: pixelated; 
+}
+.background{
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cover the entire viewport */
+    height: 100vh;  
+}
+/* Header */
+.nav {
+    position: absolute;
+    top: 20px; /* Position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 50, 0.8); /* Dark background */
+    color: #00ffff; /* Cyan text color */
+    padding: 15px 30px; /* Padding for buttons */
+    border: 2px solid #00ff00; /* Green border */
+    border-radius: 0; /* Sharp corners for retro look */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-size: 1.2rem; /* Larger font size */
+    position: relative; /* For the animation effect */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; /* Glowing effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.nav-button:hover {
+    box-shadow: 0 0 30px #00ffff, 0 0 40px #00ffff; /* Brighter glow on hover */
+}
+
+.nav-button:active {
+    transform: scale(0.9); /* Shrink effect on click */
+    animation: goIn 0.3s forwards; /* Animation when clicked */
+}
+
+@keyframes goIn {
+    0% {
+        transform: scale(1); /* Start at original size */
+    }
+    100% {
+        transform: scale(0.5); /* Shrink to half size */
+        opacity: 0; /* Fade out */
+    }
+}
+.header {
+    text-align: center;
+    background-color: rgba(0, 0, 50, 0.8);
+    padding: 10px;
+    border-bottom: 5px solid #4444ff;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+/* Container: Aligns items vertically */
+.container {
+    
+    display: flex;
+    flex-direction: column; /* Makes content flow from top to bottom */
+    align-items:left; /* Centers items horizontally */
+    justify-content: flex-start; /* Aligns items to the top */
+    padding: 20px;
+    gap: 20px; /* Adds spacing between the windows */
+}
+p,li{
+    color: #ffffff;
+}
+/* Windows: Ensure proper width for vertical flow */
+.window {
+    background: rgba(20, 20, 60, 0.9);
+    border: 3px solid #ffffff;
+    width: 80%; /* Adjust width to take up most of the screen */
+    max-width: 600px; /* Optional: Restrict max width for better readability */
+    box-shadow: 0 0 15px #4444ff;
+}
+
+
+.title-bar {
+    background: #111144;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+.title-bar .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.title-bar .buttons span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.title-bar .minimize { background-color: yellow; }
+.title-bar .maximize { background-color: green; }
+.title-bar .close { background-color: red; }
+
+.content {
+    padding: 10px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content li {
+    margin: 10px 0;
+}
+
+.content a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(1, 1, 4, 0.8);
+    padding: 10px;
+    border-top: 5px solid #060606;
+    font-size: 5rem;
+}
+
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    width: 100px; /* Set width for the marquee */
+    height: 100vh; /* Full height of the viewport */
+}
+
+
+
+#marqueeImage {
+    position: absolute;
+    top: 0; /* Start at the top */
+    left: 0; /* Start at the left */
+    width: 100px; /* Set width for the image */
+    height: 100px; /* Set height for the image */
+    border-radius: 50%; /* Make the image circular */
+    animation: moveDown 5s linear infinite, rotate 2s linear infinite; /* Adjust durations as needed */
+    image-rendering: -webkit-optimize-contrast; /* For WebKit browsers */
+    image-rendering: crisp-edges; /* For Firefox */
+    image-rendering: pixelated; 
+}
+
+@keyframes moveDown {
+    0% {
+        top: 0; /* Start at the top */
+    }
+    100% {
+        top: calc(100vh - 100px); /* Move to the bottom */
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Start rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* Complete rotation */
+    }
+}

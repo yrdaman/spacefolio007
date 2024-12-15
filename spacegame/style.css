@@ -1,0 +1,184 @@
+/* Resetting margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; 
+  background-image: url("alien.gif");
+  background-size:contain;
+  transform:scaleX(-1) ;
+   transform-origin:center ;
+  /* Black background for the space theme */
+  overflow: hidden; /* Prevent scrolling */
+  transform:scaleX(-1) ;
+   transform-origin:center ;
+  font-family: 'Orbitron', cursive; /* Retro pixelated font */
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  transform: scaleX(-1); /* Flip horizontally */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+/* Retro pixelated canvas */
+#gameCanvas {
+  width: 80%; /* Make canvas 80% of the screen width */
+  height: 80%; /* Make canvas 80% of the screen height */
+  display: block;
+  background-image: url('image.png'); /* Add your background image here */
+  background-size: cover; /* Ensure the background covers the entire canvas */
+  border: 5px solid #00ff00; /* Neon green border */
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.8); /* Strong neon glow effect */
+  border-radius: 10px; /* Rounded corners for a retro feel */
+}
+
+/* Game container for absolute positioning */
+#gameContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Scoreboard */
+#scoreBoard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00ff00; /* Neon green */
+  text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7); /* Neon glow effect */
+  z-index: 2; /* Ensure scoreboard is always visible */
+}
+
+/* Button styling */
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #ff00ff; /* Bright magenta */
+  color: #fff;
+  border: 3px solid #ff00ff; /* Bright magenta border */
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Neon glow effect */
+  transition: all 0.3s ease;
+}
+h1 {
+  font-size: 6rem; /* Large size for title */
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff6600; /* Orange color for that striking effect */
+  text-shadow: 2px 2px 10px rgba(255, 102, 0, 0.8), 0 0 25px rgba(255, 102, 0, 0.6); /* Glow effect */
+  animation: pulse 1.5s infinite alternate; /* Animation for dynamic effect */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #00ff00; /* Neon green */
+  border-color: #00ff00; /* Neon green border */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); /* Neon green glow effect */
+}
+
+/* Disabled button */
+button:disabled {
+  background-color: #444;
+  border-color: #666;
+  cursor: not-allowed;
+}
+
+/* Retro pixel font for headings */
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff00ff; /* Bright magenta */
+  text-shadow: 2px 2px 5px rgba(255, 0, 255, 0.7); /* Neon glow effect */
+  text-transform: uppercase;
+}
+
+/* Optional: Adding a "pixelated" border effect around elements */
+.pixelated {
+  image-rendering: pixelated; /* Ensures pixelated images or borders */
+}
+
+/* Retro background effect for the page */
+#gameContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 70%);
+  z-index: 1; /* Ensures the background is behind all other elements */
+  filter: blur(8px); /* Creates a soft focus effect */
+}
+
+/* Optional: Pixelated border effect for elements */
+.pixelated-border {
+  border: 3px solid #ff00ff; /* Neon border */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Neon glow */
+}
+
+/* Health bar styling */
+#healthBarContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 200px;
+  height: 20px;
+  background-color: #333; /* Dark background for the health bar */
+  border: 3px solid #ff00ff; /* Bright magenta border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Neon glow effect */
+  overflow: hidden;
+  z-index: 2; /* Ensure health bar is always visible */
+}
+
+#healthBar {
+  height: 100%;
+  width: 100%; /* Full width initially */
+  background-color: #00ff00; /* Neon green for health */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon green glow effect */
+  transition: width 0.3s ease; /* Smooth transition when health changes */
+}
+
+#healthBarText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Glowing text effect */
+}
+#game-over{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Press Start 2P', cursive;
+  
+}
