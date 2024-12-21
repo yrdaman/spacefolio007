@@ -203,7 +203,7 @@ function movePowerUps() {
 
 // Spawn enemies
 function spawnEnemies() {
-    if (Math.random() < 0.02) {
+    if (Math.random() < 0.2) {
       let x = Math.random() * (canvas.width - 50);
       let type = Math.random() < 0.2 ? 'shooting' : 'normal';
       enemies.push({ x, y: 0, type });
@@ -342,7 +342,21 @@ function checkCollisions() {
 function shootBullet() {
     if (player.isRapidFire) {
       bullets.push({ x: player.x + 10, y: player.y });
+      
+      bullets.push({ x: player.x + player.width + 10, y: player.y });
+      bullets.push({ x: player.x + player.width + 15, y: player.y });
+      bullets.push({ x: player.x + player.width + 20, y: player.y });
+      bullets.push({ x: player.x + player.width + 25, y: player.y });
+      bullets.push({ x: player.x + player.width + 30, y: player.y });
+      bullets.push({ x: player.x + player.width + 35, y: player.y });
+      bullets.push({ x: player.x + player.width + 40, y: player.y });
       bullets.push({ x: player.x + player.width - 10, y: player.y });
+      bullets.push({ x: player.x + player.width - 15, y: player.y });
+      bullets.push({ x: player.x + player.width - 20, y: player.y });
+      bullets.push({ x: player.x + player.width - 25, y: player.y });
+      bullets.push({ x: player.x + player.width - 30, y: player.y });
+      bullets.push({ x: player.x + player.width - 35, y: player.y });
+      bullets.push({ x: player.x + player.width - 40, y: player.y });
     } else {
       bullets.push({ x: player.x + player.width / 2 - 2.5, y: player.y });
     }

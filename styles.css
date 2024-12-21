@@ -61,19 +61,6 @@ body {
         opacity: 0; /* Fade out */
     }
 }
-.header {
-    text-align: center;
-    background-color: rgba(0, 0, 50, 0.8);
-    padding: 10px;
-    border-bottom: 5px solid #4444ff;
-    color: #00ffff;
-    text-shadow: 0 0 10px #00ffff;
-}
-
-.header h1 {
-    font-size: 3rem;
-}
-
 /* Container: Aligns items vertically */
 .container {
     
@@ -89,16 +76,16 @@ p,li{
 }
 /* Windows: Ensure proper width for vertical flow */
 .window {
-    background: rgba(20, 20, 60, 0.9);
+    background: rgba(54, 6, 12, 0.9);
     border: 3px solid #ffffff;
     width: 80%; /* Adjust width to take up most of the screen */
     max-width: 600px; /* Optional: Restrict max width for better readability */
-    box-shadow: 0 0 15px #4444ff;
+    box-shadow: 0 0 15px #ffd744;
 }
 
 
 .title-bar {
-    background: #111144;
+    background:rgb(53, 3, 65);
     color: #ffffff;
     padding: 5px;
     display: flex;
