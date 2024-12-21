@@ -23,7 +23,7 @@ Welcome to **My Space Folio** — a 90s-inspired portfolio website that blends r
 
 ### 📱 Responsive Design
 - Optimized for modern devices while keeping that retro charm intact.
-
+### There is Easter Egg hope u found it 😁!! 
 ---
 
 ## 💡 Inspiration
@@ -35,32 +35,23 @@ This website was inspired by the iconic design trends of the 90s, from neon-soak
 - **HTML5**: Structure and content.
 - **CSS3**: Styling with animations and retro effects.
 - **JavaScript**: Interactive elements.
-- **Font Awesome**: Retro-inspired icons.
+- **Font **: Retro-inspired fantasy,,monoscpope
 
 ---
 
-## 🛠️ How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/my-space-folio.git
-   ```
-2. Open `index.html` in your browser.
-3. Explore the retro-futuristic design and customize as needed!
+
+
 
 ---
 
-## 🎮 Customization
-Feel free to modify:
-- **Colors**: Adjust neon shades for your personal style.
-- **Fonts**: Swap in your favorite retro-inspired fonts.
-- **Content**: Add your projects, achievements, and more.
+## 👽 Lessons Learned
+Planning your project saves a lot of time and better understanment of the topic saves and makes u a winner
+if u are getting now here in the project best to take some time and relax
+There's always a solution or an alternate approach to any problem so don't stuck and always try to do same thing and not working leave 
+Taking breaks helps to refresh your mental function
+Sleep is Important
+dont divert from the topic,at the u dont get what u want and messed up
 
----
-
-## 🤝 Contributing
-Contributions are welcome! If you have ideas to enhance the retro vibe or add features, feel free to open an issue or submit a pull request.
-
----
 
 
 
