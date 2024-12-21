@@ -1,6 +1,6 @@
 # My Space Folio
 
-Welcome to **My Space Folio** — a 90s-inspired portfolio website that blends retro-futuristic vibes with modern functionality to showcase your work in the most rad way possible!
+Welcome to **My Space Folio** — Tried my beset to build a 90s-inspired portfolio website that blends retro-futuristic vibes with modern functionality to showcase your work in the most rad way possible! althouh i'm not 90's kid but it sound like an Exception but it doesn't matter
 
 ---
 
