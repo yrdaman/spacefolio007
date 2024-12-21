@@ -40,10 +40,6 @@ This website was inspired by the iconic design trends of the 90s, from neon-soak
 ---
 
 
-
-
----
-
 ## 👽 Lessons Learned
 Planning your project saves a lot of time and better understanment of the topic saves and makes u a winner
 if u are getting now here in the project best to take some time and relax
